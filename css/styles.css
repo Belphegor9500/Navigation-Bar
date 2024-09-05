@@ -1,0 +1,109 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url('background.webp');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed; /* Keeps the background fixed during scrolling */
+}
+
+/* Navigation Bar Styles */
+.navbar {
+    background-color: #292929; /* Dark background */
+    padding: 10px;
+    max-width: 800px; 
+    margin: 0 auto;   /* Centers the navbar horizontally */
+    text-align: center;
+}
+
+.nav-items {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: space-around; /* Keeps original spacing between items */
+}
+
+.nav-items li {
+    position: relative;
+}
+
+.nav-items a {
+    display: block;
+    padding: 15px 20px;
+    color: #ffa31a; /* Orange for links */
+    text-decoration: none;
+    text-align: center;
+    position: relative;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+/* Hover effect for navigation items */
+.nav-items a:hover {
+    background-color: #808080; /* Gray hover */
+    color: white;
+}
+
+/* Dropdown Arrow */
+.dropdown .dropbtn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Dropdown Menu Styles */
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #292929;
+    min-width: 200px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    border-radius: 4px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    z-index: 1000;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s, visibility 0.3s;
+}
+
+.dropdown-menu li a {
+    padding: 10px 20px;
+    color: #ffa31a;
+    text-decoration: none;
+    display: block;
+    transition: background-color 0.3s;
+}
+
+.dropdown-menu li a:hover {
+    background-color: #808080;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-menu {
+    display: block;
+    opacity: 1;
+    visibility: visible;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .nav-items {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .nav-items {
+        flex-direction: column;
+    }
+    .nav-items a {
+        padding: 10px;
+    }
+}

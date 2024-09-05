@@ -1,22 +1,21 @@
-
 Purpose of HTML, CSS, and JavaScript in Creating the Navigation Bar:
 
 HTML (Structure):
-
 Role: Provides the framework and content for the navigation bar, including links and dropdown menus.
 Key Elements: Uses <nav>, <ul>, and <li> to define navigation items and dropdown structures. Includes a meta viewport tag for responsive scaling.
 Purpose: Establishes the navigation bar's structure for styling and functionality.
-CSS (Styling and Responsiveness):
 
+CSS (Styling and Responsiveness):
 Role: Styles the navigation bar and ensures it is responsive.
 Key Features: Applies colors, padding, and layout adjustments. Uses media queries to adapt the layout for different screen sizes.
 Purpose: Manages design and responsiveness to ensure visual appeal and functionality across devices.
-JavaScript (Interactivity):
 
+JavaScript (Interactivity):
 Role: Adds dynamic functionality, such as dropdown menu behavior.
 Key Features: Handles interactions like opening/closing menus and managing click events, enhancing usability on touch devices.
 Purpose: Enhances user interaction by providing functionality beyond static styling.
-How They Work Together:
 
+How They Work Together:
 HTML: Defines the structure.
 CSS: Styles and ensures responsive layout.
+JavaScript: Adds interactive elements.
